@@ -1,0 +1,165 @@
+/*
+	Site name
+
+	Layout © , Jacob Hume
+	Licensed AGPLv3, Rock on.
+*/
+
+
+/*= Fonts ==================*/
+
+@font-face {
+	font-family: "BHBGaramond";
+	font-weight: normal;
+	src: url("../fonts/EBGaramond12-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "BHBGaramondTitle";
+	/*font-weight: bold;*/
+	src: url("../fonts/EBGaramondSC12-Regular.woff") format("woff");
+}
+
+
+
+/*= Base Styles ============*/
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #65887E;
+	text-decoration-style: dotted;
+	transition: .5s color;
+}
+
+a:active,
+a:focus,
+a:hover {
+	color: #9FBFB7;
+}
+
+body {
+	color: #fff;
+	font-family: "BHBGaramond", serif;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+footer {
+	clear: both;
+	padding: 1em;
+	text-align: center;
+}
+
+section>h1 {
+	margin-top: 0;
+}
+
+html {
+	background: #156092;
+	padding: 0;
+}
+
+
+
+/*= Modules ================*/
+
+.a11y-link {
+	background: #fff;
+	color: #000;
+	position: fixed;
+	top: -10em;
+}
+
+.content {
+	background: #131313;
+}
+
+.content-title {
+	font-weight: normal;
+	margin-top: 0;
+	padding-top: .5em;
+}
+
+.header {
+	background: #156092 url("/img/bg.jpg") no-repeat center center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	background: rgba(0,0,0,.5);
+	display: flex;
+	margin: 0;
+	padding: .25em 0;
+	justify-content: center;
+}
+
+.nav-item {
+	/*display: inline-block;*/
+	list-style: none;
+}
+
+.nav-item>a {
+	color: #fff;
+	font-family: "BHBGaramondTitle", serif;
+	letter-spacing: -1px;
+	padding: 0 0 0 .25em;
+	text-decoration: none;
+	transition: .5s text-shadow;
+}
+
+.nav-item>a:active, 
+.nav-item>a:focus, 
+.nav-item>a:hover {
+/*	border: 0 solid #fff;
+	border-width: 0 0 .1em 0;*/
+	text-shadow: 0 0 .2em #fff;
+}
+
+.nav-item:before {
+	content: "·";
+	padding: 0 0 0 .25em;
+}
+
+.nav-item:first-child {
+	padding: 0;
+}
+
+.nav-item:first-child:before {
+	content: "";
+	padding: 0;
+}
+
+.site-title {
+	font-family: "BHBGaramondTitle", serif;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1em;
+	text-align: center;
+	text-shadow: 4px 4px 1px #000;
+}
+
+
+/*= State ==================*/
+
+.a11y-link:active,
+.ally-link:focus {
+	top: 1em;
+}
+
+
+
+/*= Responsive =================*/
+
+@media screen and (max-width: 450px) {
+
+	body {
+		font-size: 1em;
+	}
+}
