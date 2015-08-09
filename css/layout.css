@@ -30,22 +30,10 @@
 	box-sizing: border-box;
 }
 
-a {
-	color: #65887E;
-	text-decoration-style: dotted;
-	transition: .5s color;
-}
-
-a:active,
-a:focus,
-a:hover {
-	color: #9FBFB7;
-}
-
 body {
 	color: #fff;
 	font-family: "BHBGaramond", serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin: 0;
 }
 
@@ -60,7 +48,7 @@ section>h1 {
 }
 
 html {
-	background: #156092;
+	background: #050505;
 	padding: 0;
 }
 
@@ -77,6 +65,18 @@ html {
 
 .content {
 	background: #131313;
+	padding: 0 1em;
+}
+
+.content a {
+	color: #65887E;
+	text-decoration-style: dotted;
+}
+
+.content a:active,
+.content a:focus,
+.content a:hover {
+	color: #9FBFB7;
 }
 
 .content-title {
@@ -100,18 +100,19 @@ html {
 	justify-content: center;
 }
 
-.nav-item {
-	/*display: inline-block;*/
-	list-style: none;
+.nav-item:active,
+.nav-item:hover {
+	text-shadow: 0 0 .2em #fff;
 }
 
 .nav-item>a {
 	color: #fff;
+	display: inline-block;
 	font-family: "BHBGaramondTitle", serif;
+	height: 100%;
 	letter-spacing: -1px;
-	padding: 0 0 0 .25em;
+	padding: 1em .25em;
 	text-decoration: none;
-	transition: .5s text-shadow;
 }
 
 .nav-item>a:active, 
@@ -119,12 +120,10 @@ html {
 .nav-item>a:hover {
 /*	border: 0 solid #fff;
 	border-width: 0 0 .1em 0;*/
-	text-shadow: 0 0 .2em #fff;
 }
 
 .nav-item:before {
 	content: "·";
-	padding: 0 0 0 .25em;
 }
 
 .nav-item:first-child {
@@ -140,13 +139,18 @@ html {
 	font-family: "BHBGaramondTitle", serif;
 	font-size: 2em;
 	font-weight: bold;
-	padding: 1em;
+	line-height: .8;
+	padding: .5em 0 1em 0;
 	text-align: center;
 	text-shadow: 4px 4px 1px #000;
 }
 
 
 /*= State ==================*/
+
+.content a, .nav a {
+	transition: color, text-shadow .5s;
+}
 
 .a11y-link:active,
 .ally-link:focus {
@@ -157,9 +161,39 @@ html {
 
 /*= Responsive =================*/
 
-@media screen and (max-width: 450px) {
+/* Larger screens (tablet, desktop */
+@media screen and (min-width: 1024px) {
 
 	body {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
+
+	.content {
+		margin: 0 auto;
+		padding: 1em;
+		max-width: 960px;
+	}
+
+	.nav-item {
+		list-style: none;
+	}
+}
+
+/* Smaller screens */
+@media screen and (min-width: 700px) {
+
+	.content {
+	}
+
+	.nav-item>a {
+		padding: 0 .5em;
+	}
+
+	.nav-item>a:active,
+	.nav-item>a:hover {
+	}
+}
+
+/* Very small screens */
+@media screen and (min-width: 700px) {
 }
