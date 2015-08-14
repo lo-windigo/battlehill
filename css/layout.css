@@ -16,8 +16,10 @@
 
 @font-face {
 	font-family: "BHBGaramondTitle";
-	/*font-weight: bold;*/
-	src: url("../fonts/EBGaramondSC12-Regular.woff") format("woff");
+	font-weight: bold;
+	/*src: url("../fonts/EBGaramondSC12-Regular.woff") format("woff");*/
+	/*src: url("../fonts/acknowledgement-webfont.woff") format("woff");*/
+	src: url("../fonts/alfaslabone-regular-webfont.woff") format("woff");
 }
 
 
