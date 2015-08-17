@@ -20,6 +20,7 @@ body {
 }
 
 /* Title/emphasized font */
+h1,h2,
 .content-title,
 .nav-item>a,
 .site-title {
@@ -52,8 +53,9 @@ footer {
 	text-align: center;
 }
 
-section>h1 {
-	margin-top: 0;
+iframe {
+	border: 0;
+	width: 100%;
 }
 
 html {
@@ -75,6 +77,13 @@ html {
 	top: -10em;
 }
 
+.clear:before {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+
 .content {
 	background: #EBECD7;
 	/*background-image: linear-gradient(to top, #245A2D, #EBECD7 5em);*/
@@ -89,8 +98,12 @@ html {
 	transition: color, text-shadow .5s;
 }
 
-.content-title {
+.content h1,
+.content h2 {
 	color: #243659;
+}
+
+.content-title {
 	margin-top: 0;
 	padding-top: .5em;
 	text-shadow: 1px 1px 1px #aaa;
@@ -104,6 +117,10 @@ html {
 	padding: 0;
 	position: relative;
 	z-index: 100;
+}
+
+.logo {
+	text-align: center;
 }
 
 .nav {
@@ -126,7 +143,7 @@ html {
 	font-size: 2em;
 	font-weight: bold;
 	line-height: .9;
-	padding: .5em 0 1em 0;
+	padding: 1em 0 .5em 0;
 	text-align: center;
 	text-shadow: 4px 4px 1px #000;
 }
@@ -156,26 +173,23 @@ html {
 
 /*= Responsive =================*/
 
-/* Larger screens (tablet, desktop */
-@media screen and (min-width: 1024px) {
 
-	body {
-		font-size: 1.5em;
-	}
+/* Very small screens */
+@media screen and (min-width: 400px) {
 
-	.content {
-		margin: 0 auto;
-		padding: 1em;
-		max-width: 960px;
-	}
-
-	.nav-item>a {
-		padding: 1em .25em;
+	html {
+		font-size: .8em;
 	}
 }
 
+
 /* Smaller screens */
 @media screen and (min-width: 700px) {
+
+	.home-details {
+		float: right;
+		width: 50%;
+	}
 
 	.nav-item {
 		list-style: none;
@@ -183,7 +197,7 @@ html {
 
 	.nav-item>a {
 		display: inline-block;
-		padding: 0 .5em;
+		padding: .5em;
 	}
 
 	.nav-item:before {
@@ -202,6 +216,21 @@ html {
 	}
 }
 
-/* Very small screens */
-@media screen and (min-width: 700px) {
+
+/* Larger screens (tablet, desktop */
+@media screen and (min-width: 1024px) {
+
+	html {
+		font-size: 1.2em;
+	}
+
+	.content {
+		margin: 0 auto;
+		padding: 1em;
+		max-width: 960px;
+	}
+
+	.nav-item>a {
+		padding: .25em .5em;
+	}
 }
