@@ -43,7 +43,6 @@ ul {
 }
 
 body {
-	font-size: 1.2em;
 	margin: 0;
 }
 
@@ -53,16 +52,27 @@ footer {
 	text-align: center;
 }
 
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+html {
+	background: #245A2D;
+	color: #131313;
+	padding: 0;
+}
+
 iframe {
 	border: 0;
 	width: 100%;
 }
 
-html {
-	/*background: #131313;*/
-	color: #131313;
-	background: #245A2D;
-	padding: 0;
+img {
+	max-width: 100%;
 }
 
 
@@ -89,7 +99,7 @@ html {
 	content: ":";
 }
 
-.clear:before {
+.clear::before {
 	clear: both;
 	content: " ";
 	display: block;
@@ -98,10 +108,9 @@ html {
 
 .content {
 	background: #EBECD7;
-	/*background-image: linear-gradient(to top, #245A2D, #EBECD7 5em);*/
 	border-radius: 0 0 2em 2em;
 	box-shadow: .1em .1em .25em #000;
-	padding: 0 1em;
+	padding: 1em;
 }
 
 .content a {
@@ -121,6 +130,10 @@ html {
 	text-shadow: 1px 1px 1px #aaa;
 }
 
+.form-submit {
+	text-align: center;
+}
+
 .header {
 	background: #156092 url("/img/bg.jpg") no-repeat center center;
 	background-size: cover;
@@ -131,23 +144,39 @@ html {
 	z-index: 100;
 }
 
-.header .nav {
-	background: rgba(0,0,0,.5);
-}
-
 .logo {
+	padding-top: 1px;
 	text-align: center;
 }
 
 .nav {
-	display: flex;
+	color: #fff;
 	margin: 0;
-	padding: .25em 0;
+	display: flex;
+	padding: 0;
 	justify-content: center;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	width: auto;
+}
+
+.nav-item::before {
+	content: "·";
+	text-shadow: 1px 1px 1px #000;
+}
+
+.nav-item:first-child::before {
+	content: "";
+	padding: 0;
 }
 
 .nav-item>a {
 	color: #fff;
+	display: inline-block;
+	padding: .5em;
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #000;
 	transition: color, text-shadow .5s;
@@ -155,10 +184,10 @@ html {
 
 .site-title {
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: bold;
 	line-height: .9;
-	padding: 1em 0 .5em 0;
+	padding: 1.5em 0 .5em 0;
 	text-align: center;
 	text-shadow: 4px 4px 1px #000;
 }
@@ -189,59 +218,129 @@ html {
 /*= Responsive =================*/
 
 
-/* Very small screens */
-@media screen and (min-width: 400px) {
+/* Smaller screens */
+@media screen and (max-width: 600px) {
 
-	html {
-		font-size: .8em;
+	.open-nav {
+		border: 0 solid #fff;
+		border-width: 0 0 4px 0;
+		color: #fff;
+		float: right;
+		font-size: 0;
+		padding: 0 0 7px 0;
+		text-decoration: none;
+		width: 40px;
+	}
+
+	.open-nav::after {
+		border: 0 solid #fff;
+		border-width: 4px 0;
+		content: "";
+		display: block;
+		padding-top: 7px;
+	}
+
+	.top-nav {
+		background: #000;
+		border-radius: .5em;
+		padding: 1em;
+		position: absolute;
+		right: .5em;
+		top: .5em;
+	}
+
+	.top-nav::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.top-nav>.nav {
+		display: block;
+		padding: 1em 0 0 1em;
+		position: absolute;
+		top: -999em;
+	}
+
+	.top-nav .nav-item {
+		color: #fff;
+		clear: right;
+		display: block;
+		display: list-item;
+		list-style-position: outside;
+		list-style-type: disc;
+		width: 100%;
+	}
+
+	.top-nav .nav-item::before {
+		content: "";
+	}
+
+	/*----- State -----*/
+	.top-nav:active>.nav,
+	.top-nav:hover>.nav {
+		position: relative;
+		top: 0;
 	}
 }
 
 
-/* Smaller screens */
-@media screen and (min-width: 700px) {
+/* Medium screens (tablet, high DPI mobile) */
+@media screen and (min-width: 601px) {
+
+	body {
+		font-size: 120%;
+	}
+
+	/* Hide the menu button; menu already shown */
+	.open-nav {
+		display: none;
+	}
+
+	.content {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.top-nav {
+		background: rgba(0,0,0,.5);
+		border-radius: 0;
+	}
+
+	.top-nav,
+	.top-nav>.nav {
+		position: static;
+	}
 
 	.home-details {
 		float: right;
 		width: 50%;
 	}
 
-	.nav-item {
-		list-style: none;
+	.site-title {
+		padding: 1em 0 .5em 0;
 	}
 
-	.nav-item>a {
+	.top-nav {
+		padding: 0;
+	}
+
+	.top-nav .nav-item {
 		display: inline-block;
-		padding: .5em;
-	}
-
-	.nav-item:before {
-		color: #fff;
-		content: "·";
-		text-shadow: 1px 1px 1px #000;
-	}
-
-	.nav-item:first-child {
-		padding: 0;
-	}
-
-	.nav-item:first-child:before {
-		content: "";
-		padding: 0;
+		width: auto;
 	}
 }
 
 
-/* Larger screens (tablet, desktop */
-@media screen and (min-width: 1024px) {
+/* Larger screens (high DPI tablet, desktop) */
+@media screen and (min-width: 1025px) {
 
-	html {
-		font-size: 1.2em;
+	body {
+		font-size: 140%;
 	}
 
 	.content {
 		margin: 0 auto;
-		padding: 1em;
 		max-width: 960px;
 	}
 

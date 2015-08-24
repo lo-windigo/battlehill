@@ -6,7 +6,7 @@ Top();
 ?>
 		<div class="home-details logo">
 			<p>
-				<img src="img/logo.png" alt="The Battle Hill Brewing Company logo">
+				<img src="img/logo.png" alt="The Battle Hill Brewing Company logo"><br>
 				<a href="http://www.facebook.com/battlehillbrewing"><img src="img/fb.png"
 					alt="Find Battle Hill Brewing Company on Facebook"></a>
 			</p>
@@ -16,7 +16,9 @@ Top();
 			</p>
 		</div>
 		<div class="home-intro">
-			<h1 class="content-title home-title">Revolutionary beer, brewed fresh in Fort Ann</h1>
+			<h1 class="content-title home-title">
+				Revolutionary beer, brewed fresh in&nbsp;Fort&nbsp;Ann
+			</h1>
 			<p>
 				Our vision is to create and share our ales, 7 barrels at a time,
 				using <strong>fresh local ingredients</strong> and our <strong>refined
