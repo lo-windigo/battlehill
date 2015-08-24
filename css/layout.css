@@ -278,7 +278,8 @@ img {
 
 	/*----- State -----*/
 	.top-nav:active>.nav,
-	.top-nav:hover>.nav {
+	.top-nav:hover>.nav,
+	.top-nav:target>.nav {
 		position: relative;
 		top: 0;
 	}
