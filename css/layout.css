@@ -131,12 +131,15 @@ html {
 	z-index: 100;
 }
 
+.header .nav {
+	background: rgba(0,0,0,.5);
+}
+
 .logo {
 	text-align: center;
 }
 
 .nav {
-	background: rgba(0,0,0,.5);
 	display: flex;
 	margin: 0;
 	padding: .25em 0;

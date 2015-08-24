@@ -1,5 +1,21 @@
 <?php
 
+function Nav() {
+?>
+		<nav>
+			<ul class="nav">
+				<li class="nav-item"><a href="/">Hours and Location</a></li>
+				<li class="nav-item"><a href="/about.php">About</a></li>
+				<li class="nav-item"><a href="/beer.php">Beer</a></li>
+				<!--<li class="nav-item"><a href="menu.php">Menu</a></li>-->
+				<li class="nav-item"><a href="/photos.php">Photos</a></li>
+				<li class="nav-item"><a href="/contact.php">Contact</a></li>
+			</ul>
+		</nav>
+<?php
+}
+
+
 function Top($title = false) {
 ?><!doctype html>
 <html>
@@ -24,16 +40,7 @@ function Top($title = false) {
 		<div class="site-title">
 			Battle Hill<br>Brewing Company
 		</div>
-		<nav>
-			<ul class="nav">
-				<li class="nav-item"><a href="/">Hours and Location</a></li>
-				<li class="nav-item"><a href="/about.php">About</a></li>
-				<li class="nav-item"><a href="/beer.php">Beer</a></li>
-				<!--<li class="nav-item"><a href="menu.php">Menu</a></li>-->
-				<li class="nav-item"><a href="/photos.php">Photos</a></li>
-				<li class="nav-item"><a href="/contact.php">Contact</a></li>
-			</ul>
-		</nav>
+<?php Nav(); ?>
 	</header>
 	<section class="content">
 <?php
@@ -42,8 +49,12 @@ function Top($title = false) {
 
 function Bottom() {
 ?>
+	</section>
 	<footer>
-		©2015 Battle Hill Brewing Company 
+<?php Nav(); ?>
+		<p>
+			©<?php echo date('Y'); ?> Battle Hill Brewing Company 
+		</p>
 	</footer>
 </body>
 
