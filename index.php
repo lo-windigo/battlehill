@@ -11,15 +11,16 @@ Top();
 					alt="Find Battle Hill Brewing Company on Facebook"></a>
 			</p>
 			<p>
-				Opening soon! Check back for hours!
+				Monday, Thurs, &amp; Friday: 2-8PM<br>
+				Saturday, Sunday: 12-8PM
 			</p>
 		</div>
 		<div class="home-intro">
-			<h1 class="content-title home-title">Local craft beer and wine<br>in historic Fort Ann</h1>
+			<h1 class="content-title home-title">Revolutionary beer, brewed fresh in Fort Ann</h1>
 			<p>
 				Our vision is to create and share our ales, 7 barrels at a time,
-				using <strong>fresh local ingredients</strong> and our refined recipes and brewing
-				practices.
+				using <strong>fresh local ingredients</strong> and our <strong>refined
+				recipes and brewing practices</strong>.
 			</p>
 		</div>
 		<h2 class="clear">Location</h2>
