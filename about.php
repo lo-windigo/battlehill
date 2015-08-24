@@ -30,12 +30,12 @@ local ingredients and our refined recipes and brewing practices. Washington
 County, NY has a long  and varied agricultural history and we’re honored to be 
 part of that, and to hopefully play a part in the resurgence of the area. We 
 think the craft beer and wine industry is a great fit for the county, and we’re 
-very excited to be part of this community.  It’s likely that soon the whole farm 
+very excited to be part of this community. It’s likely that soon the whole farm 
 to glass experience can be had without leaving our county! 
 		</p>
 		<p>
-			We look forward to innovating , brewing and keeping it local. We 
-think our beers will make you happy…. come see us,  have a pint and take some 
+			We look forward to innovating, brewing and keeping it local. We 
+think our beers will make you happy… come see us, have a pint and take some 
 home to enjoy!
 		</p>
 <?php
