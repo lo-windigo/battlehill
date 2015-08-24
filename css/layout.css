@@ -77,6 +77,18 @@ html {
 	top: -10em;
 }
 
+.beer-name {
+	display: inline-block;
+	float: left;
+	font-size: 1em;
+	margin: 0 .25em 0 0;
+	vertical-align: baseline;
+}
+
+.beer-name::after {
+	content: ":";
+}
+
 .clear:before {
 	clear: both;
 	content: " ";
@@ -228,6 +240,10 @@ html {
 		margin: 0 auto;
 		padding: 1em;
 		max-width: 960px;
+	}
+
+	.logo {
+		margin-top: -1.5em;
 	}
 
 	.nav-item>a {
