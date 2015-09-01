@@ -14,8 +14,6 @@ define('MAIL_TO',		'jacob@fragdev.com');
 //define(MAIL_TO,		'test@battlehillbrewing.com');
 define('MAIL_FROM',		'DONOTREPLY@battlehillbrewing.com');
 define('MAIL_SUBJECT',	'Message from the Battle Hill website');
-
-
 define('PAGE_TITLE',	'Contact Battle Hill Brewing');
 
 // Allow form data to be thrown
@@ -31,8 +29,21 @@ if(FormSubmitted()) {
 		// Process form data, and store data in an array
 		$data = ProcessForm();
 
+		// Compile the message
+		$message = 'From: '.$data['sender']."\n";
+
+		if(!empty($data['email'])) {
+			$message .= 'Email: '.$data['email']."\n";
+		}
+
+		if(!empty($data['contact'])) {
+			$message .= 'Contact: '.$data['contact']."\n";
+		}
+
+		$message .= "\n\n".$data['message'];
+
 		// Send the message
-		mail(MAIL_TO, MAIL_SUBJECT, $data['message'], 'From: '.MAIL_FROM);
+		mail(MAIL_TO, MAIL_SUBJECT, $message, 'From: '.MAIL_FROM);
 
 		DisplaySuccess();
 	}
@@ -67,12 +78,19 @@ function DisplayForm($error = false) {
 		<p>
 			<label for="sender">
 				Name:
-				<input type="text" name="sender" id="sender" size="50" required<?php
-	if($data && !empty($data['sender'])) {
-
-		echo ' value="', htmlspecialchars($data['sender'], ENT_COMPAT, 'UTF-8'), '"';
-
-	}?>>
+				<input type="text" name="sender" id="sender" size="50" required<?php PreviousFieldValue('sender', $data);?>>
+			</label>
+		</p>
+		<p>
+			<label for="email">
+				Name:
+				<input type="email" name="email" id="email" size="50" required<?php PreviousFieldValue('email', $data);?>>
+			</label>
+		</p>
+		<p>
+			<label for="contact">
+				Name:
+				<input type="text" name="contact" id="contact" size="50" required<?php PreviousFieldValue('contact', $data);?>>
 			</label>
 		</p>
 		<p>
@@ -124,13 +142,19 @@ function ProcessForm() {
 
 	$error = false;
 	$data = [];
-	$fields = ['sender', 'message'];
+	$fields = ['sender', 'contact', 'email', 'message'];
 
 	// Validate form data
 	foreach($fields as $index) {
 
 		if(empty($_POST[$index])) {
-			$error = true;
+			if($index === 'sender' ||
+			$index === 'message') {
+				$error = true;
+			}
+			else {
+				$data[$index] = false;
+			}
 		}
 		else {
 			$data[$index] = filter_input(INPUT_POST, $index,
