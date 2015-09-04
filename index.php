@@ -1,6 +1,6 @@
 <?php
 
-require_once('lib/template.php');
+require_once 'lib/template.php';
 
 Top();
 ?>

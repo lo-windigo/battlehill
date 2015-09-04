@@ -134,6 +134,32 @@ img {
 	text-align: center;
 }
 
+/* Image gallery (photos page) */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1em;
+	padding: 0;
+}
+
+.gallery::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.gallery li {
+	float: left;
+	list-style: none;
+	margin: auto;
+	padding: .25em;
+}
+
+.gallery img {
+	box-shadow: 0 .1em .25em #666;
+}
+
 .header {
 	background: #156092 url("/img/bg.jpg") no-repeat center center;
 	background-size: cover;
