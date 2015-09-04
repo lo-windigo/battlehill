@@ -10,7 +10,8 @@ require_once('lib/template.php');
 
 
 // Settings
-define('MAIL_TO',		'jacob@fragdev.com');
+define('MAIL_TO',		'windigo.piper');
+//define('MAIL_TO',		'jacob@fragdev.com');
 //define(MAIL_TO,		'test@battlehillbrewing.com');
 define('MAIL_FROM',		'DONOTREPLY@battlehillbrewing.com');
 define('MAIL_SUBJECT',	'Message from the Battle Hill website');
@@ -66,6 +67,9 @@ function DisplayForm($error = false) {
 
 		$data = $error->data;
 	}
+	else {
+		$data = false;
+	}
 ?>
 	<h1 class="content-title"><?php echo PAGE_TITLE; ?></h1>
 <?php
@@ -83,14 +87,14 @@ function DisplayForm($error = false) {
 		</p>
 		<p>
 			<label for="email">
-				Name:
-				<input type="email" name="email" id="email" size="50" required<?php PreviousFieldValue('email', $data);?>>
+				Email:
+				<input type="email" name="email" id="email" size="50" <?php PreviousFieldValue('email', $data);?>>
 			</label>
 		</p>
 		<p>
 			<label for="contact">
-				Name:
-				<input type="text" name="contact" id="contact" size="50" required<?php PreviousFieldValue('contact', $data);?>>
+				Phone:
+				<input type="tel" name="contact" id="contact" size="50" <?php PreviousFieldValue('contact', $data);?>>
 			</label>
 		</p>
 		<p>
@@ -182,6 +186,6 @@ function PreviousFieldValue($index, $data = false) {
 
 		echo ' value="', htmlspecialchars($data[$index], ENT_COMPAT, 'UTF-8'), '"';
 
-	}?>>
+	}
 }
 ?>
