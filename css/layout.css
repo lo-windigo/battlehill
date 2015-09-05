@@ -75,6 +75,19 @@ img {
 	max-width: 100%;
 }
 
+input[type=email],
+input[type=tel],
+input[type=text] {
+	display: block;
+	min-width: 25em;
+	width: 50%;
+}
+
+textarea {
+	height: 6em;
+	width: 100%;
+}
+
 
 
 /*= Modules ================*/

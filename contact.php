@@ -33,12 +33,16 @@ if(FormSubmitted()) {
 		// Compile the message
 		$message = 'From: '.$data['sender']."\n";
 
+		if(!empty($data['sender'])) {
+			$message .= 'Name: '.$data['sender']."\n";
+		}
+
 		if(!empty($data['email'])) {
 			$message .= 'Email: '.$data['email']."\n";
 		}
 
 		if(!empty($data['contact'])) {
-			$message .= 'Contact: '.$data['contact']."\n";
+			$message .= 'Phone: '.$data['contact']."\n";
 		}
 
 		$message .= "\n\n".$data['message'];
@@ -109,7 +113,7 @@ function DisplayForm($error = false) {
 			</label>
 			<input type="hidden" name="submitted" value="y">
 		</p>
-		<p>
+		<p class="form-submit">
 			<input type="submit" value="Send message">
 		</p>
 	</form>
