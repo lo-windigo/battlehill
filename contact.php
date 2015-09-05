@@ -82,10 +82,16 @@ function DisplayForm($error = false) {
 		echo '<p>', $error->getMessage(), '</p>';
 	}
 ?>
+	<p>
+		If you have any questions or comments, please feel free to send us a message.
+	</p>
+	<p>
+		<em>Note:</em> Any field marked with a * is required.
+	</p>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 		<p>
 			<label for="sender">
-				Name:
+				Name:*
 				<input type="text" name="sender" id="sender" size="50" required<?php PreviousFieldValue('sender', $data);?>>
 			</label>
 		</p>
@@ -103,7 +109,7 @@ function DisplayForm($error = false) {
 		</p>
 		<p>
 			<label for="message">
-				Message:
+				Message:*
 				<textarea name="message" id="message" required><?php
 	if($data && !empty($data['message'])) {
 

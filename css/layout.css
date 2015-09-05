@@ -81,11 +81,15 @@ input[type=text] {
 	display: block;
 	min-width: 25em;
 	width: 50%;
+	font: 1em serif;
+	padding: .1em;
 }
 
 textarea {
 	height: 6em;
 	width: 100%;
+	font: 1em serif;
+	padding: .1em;
 }
 
 
@@ -101,15 +105,11 @@ textarea {
 }
 
 .beer-name {
-	display: inline-block;
-	float: left;
-	font-size: 1em;
-	margin: 0 .25em 0 0;
-	vertical-align: baseline;
+	margin-bottom: 0;
 }
 
-.beer-name::after {
-	content: ":";
+.beer-name + p {
+	margin-top: 0;
 }
 
 .clear::before {

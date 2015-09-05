@@ -13,6 +13,7 @@ Top($title);
 			<a href="http://www.facebook.com/battlehillbrewing">Facebook</a> page
 			for our latest seasonal offerings!
 		</p>
+		<hr>
 		<h2 class="beer-name">Grains of Liberty</h2>
 		<p>
 			An all grain and honey session ale brewed in conjunction with area
