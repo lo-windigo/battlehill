@@ -6,12 +6,11 @@ by Jacob Hume
 */
 
 // Include the site template
-require_once('lib/template.php');
+require_once 'lib/template.php';
 
 
 // Settings
-define('MAIL_TO',		'windigo.piper');
-//define('MAIL_TO',		'jacob@fragdev.com');
+define('MAIL_TO',		'jacob@fragdev.com');
 //define(MAIL_TO,		'test@battlehillbrewing.com');
 define('MAIL_FROM',		'DONOTREPLY@battlehillbrewing.com');
 define('MAIL_SUBJECT',	'Message from the Battle Hill website');

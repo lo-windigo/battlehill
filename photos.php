@@ -17,10 +17,12 @@ Top(TITLE);
 				<a href="/photos/opening/1.jpg"><img src="/photos/opening/1_t.jpg"
 					alt="Brewery equipment"></a>
 			</li>
-			<li>
-				<a href="/photos/opening/2.jpg"><img src="/photos/opening/2_t.jpg"
-					alt="The front of the brewery building"></a>
-			</li>
+<?php
+//			<li>
+//				<a href="/photos/opening/2.jpg"><img src="/photos/opening/2_t.jpg"
+//					alt="The front of the brewery building"></a>
+//			</li>
+?>
 			<li>
 				<a href="/photos/opening/3.jpg"><img src="/photos/opening/3_t.jpg"
 					alt="A banner that reads battle hill brewing company; on tap soon"></a>
@@ -45,10 +47,12 @@ Top(TITLE);
 				<a href="/photos/opening/8.jpg"><img src="/photos/opening/8_t.jpg"
 					alt="The doorway leading to the patio, looking outside"></a>
 			</li>
-			<li>
-				<a href="/photos/opening/9.jpg"><img src="/photos/opening/9_t.jpg"
-					alt="The restroom, a clean room with towels, handrail and a sink"></a>
-			</li>
+<?php
+//			<li>
+//				<a href="/photos/opening/9.jpg"><img src="/photos/opening/9_t.jpg"
+//					alt="The restroom, a clean room with towels, handrail and a sink"></a>
+//					</li>
+?>
 			<li>
 				<a href="/photos/opening/10.jpg"><img src="/photos/opening/10_t.jpg"
 					alt="A row of kegs behind-the-scenes, hooked up to the taps with red tubing"></a>
