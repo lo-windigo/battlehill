@@ -32,10 +32,6 @@ if(FormSubmitted()) {
 		// Compile the message
 		$message = 'From: '.$data['sender']."\n";
 
-		if(!empty($data['sender'])) {
-			$message .= 'Name: '.$data['sender']."\n";
-		}
-
 		if(!empty($data['email'])) {
 			$message .= 'Email: '.$data['email']."\n";
 		}
