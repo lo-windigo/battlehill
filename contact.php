@@ -10,8 +10,8 @@ require_once 'lib/template.php';
 
 
 // Settings
-define('MAIL_TO',		'jacob@fragdev.com');
-//define(MAIL_TO,		'test@battlehillbrewing.com');
+//define('MAIL_TO',		'jacob@fragdev.com');
+define('MAIL_TO',		'jimdarlenehume@yahoo.com');
 define('MAIL_FROM',		'DONOTREPLY@battlehillbrewing.com');
 define('MAIL_SUBJECT',	'Message from the Battle Hill website');
 define('PAGE_TITLE',	'Contact Battle Hill Brewing');
@@ -30,7 +30,7 @@ if(FormSubmitted()) {
 		$data = ProcessForm();
 
 		// Compile the message
-		$message = 'From: '.$data['sender']."\n";
+		$message = 'Name: '.$data['sender']."\n";
 
 		if(!empty($data['email'])) {
 			$message .= 'Email: '.$data['email']."\n";
