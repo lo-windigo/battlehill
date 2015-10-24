@@ -147,7 +147,47 @@ textarea {
 	text-align: center;
 }
 
+/* Image galleries thumbnails */
+.galleries a:first-child {
+	position: relative;
+	/*z-index: 100;*/
+}
+
+.galleries a:first-child,
+.galleries a:first-child::after,
+.galleries a:first-child::before {
+	background: #fff;
+	/*display: inline-block;*/
+	display: block;
+	padding: 1em;
+	border: 1px solid #999;
+	border-radius: .25em;
+	box-shadow: 0 .1em .25em #666;
+}
+
+.galleries a:first-child::after,
+.galleries a:first-child::before {
+	background: #fff;
+	content: "";
+	position: absolute;
+	height: 200px;
+	width: 200px;
+}
+
+.galleries a:first-child::after {
+	transform: rotate(3deg);
+	top: 0;
+	z-index: -1;
+}
+
+.galleries a:first-child::before {
+	transform: rotate(-5deg);
+	top: 0;
+	z-index: 80;
+}
+
 /* Image gallery (photos page) */
+.galleries,
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -162,6 +202,7 @@ textarea {
 	clear: both;
 }
 
+.galleries li,
 .gallery li {
 	float: left;
 	list-style: none;
