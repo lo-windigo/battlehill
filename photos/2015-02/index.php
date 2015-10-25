@@ -2,15 +2,14 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/lib/template.php';
 
-define('TITLE', 'Photo Galleries');
+define('TITLE', 'February 2015');
 
 Top(TITLE);
 ?>
 		<h1 class="content-title"><?php echo TITLE; ?></h1>
 		<p>
-			Take a virtual tour of the brewery, from construction to the present
-			day. Get a look behind-the-scenes at the inner workings, and the
-			brewing process that makes Battle Hill Brewing Company special.
+			Construction photos taken throughout February, 2015. You can see quite
+			a bit of progress, and the brewery is staring to take shape.
 		</p>
 		<ul class="gallery">
 			<li>
@@ -62,6 +61,9 @@ Top(TITLE);
 					""></a>
 			</li>
 		</ul>
+		<p class="subsection-nav">
+			Return to <a href="/photos.php">Photo galleries</a>
+		</p>
 <?php
 Bottom();
 ?>

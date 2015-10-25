@@ -8,9 +8,9 @@ Top(TITLE);
 ?>
 		<h1 class="content-title"><?php echo TITLE; ?></h1>
 		<p>
-			Take a virtual tour of the brewery, from construction to the present
-			day. Get a look behind-the-scenes at the inner workings, and the
-			brewing process that makes Battle Hill Brewing Company special.
+			The initial construction work and preparation for the Battle Hill
+			Brewing Company building. You can see for yourself the humble
+			beginnings and all of the hard work that went into creating the brewery!
 		</p>
 		<ul class="gallery">
 			<li>
@@ -74,6 +74,9 @@ Top(TITLE);
 					"The deck, missing railings in some spots, covered in snow"></a>
 			</li>
 		</ul>
+		<p class="subsection-nav">
+			Return to <a href="/photos.php">Photo galleries</a>
+		</p>
 <?php
 Bottom();
 ?>

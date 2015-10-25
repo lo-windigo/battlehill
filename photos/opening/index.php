@@ -2,15 +2,15 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/lib/template.php';
 
-define('TITLE', 'Photographs');
+define('TITLE', 'Opening');
 
 Top(TITLE);
 ?>
 		<h1 class="content-title"><?php echo TITLE; ?></h1>
 		<p>
-			Take a virtual tour of the brewery! These images were taken before opening
-			day, and give you a look behind-the-scenes at the inner workings and the
-			brewing process that makes Battle Hill Brewing Company special.
+			A quick snapshot of the brewery, just before opening! You can imagine that,
+			moments after these pictures were taken, the doors opened for the first time
+			and the beer began to flow…
 		</p>
 		<ul class="gallery">
 			<li>
@@ -66,6 +66,9 @@ Top(TITLE);
 					alt="A decorative gate stating 'May the hinges of friendship never grow rusty'"></a>
 			</li>
 		</ul>
+		<p class="subsection-nav">
+			Return to <a href="/photos.php">Photo galleries</a>
+		</p>
 <?php
 Bottom();
 ?>
