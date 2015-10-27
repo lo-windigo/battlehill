@@ -36,7 +36,7 @@ Top(TITLE);
 		</ul>
 		<aside>
 			Many, if not all, of these photos were taken by none other than 
-			<strong>Bill McCuskery</strong>,
+			<strong>Bill McCoskery</strong>,
 			a friend of the Battle Hill Brewing Company and the author of our original
 			website. Thank you so much for your help!
 		</aside>
