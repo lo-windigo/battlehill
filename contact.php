@@ -71,6 +71,9 @@ function DisplayForm($error = false) {
 	}
 ?>
 	<h1 class="content-title"><?php echo PAGE_TITLE; ?></h1>
+	<p>
+		Our phone number is <strong>518-639-1033</strong>.
+	</p>
 <?php
 	if($error) {
 
