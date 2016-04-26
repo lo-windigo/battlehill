@@ -11,8 +11,8 @@ Top();
 					alt="Find Battle Hill Brewing Company on Facebook"></a>
 			</p>
 			<p>
-				Monday, Thurs, &amp; Friday: 2-8PM<br>
-				Saturday, Sunday: 12-8PM
+				Wednesday&ndash;Saturday: 12-8PM<br>
+				Sunday: 12-6PM
 			</p>
 		</div>
 		<div class="home-intro">
