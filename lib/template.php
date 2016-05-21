@@ -2,10 +2,10 @@
 
 function Nav() {
 ?>
-				<li class="nav-item"><a href="/">Hours and Location</a></li>
+				<li class="nav-item"><a href="/">Home</a></li>
 				<li class="nav-item"><a href="/about.php">About</a></li>
 				<li class="nav-item"><a href="/beer.php">Beer</a></li>
-				<!--<li class="nav-item"><a href="menu.php">Menu</a></li>-->
+				<li class="nav-item"><a href="menu.php">Menu</a></li>
 				<li class="nav-item"><a href="/photos.php">Photos</a></li>
 				<li class="nav-item"><a href="/contact.php">Contact</a></li>
 <?php

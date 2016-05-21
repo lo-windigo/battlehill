@@ -94,7 +94,7 @@ Top($title);
 		</p>
 		<ul>
 			<li class="menu-item">
-				<h3>Battle hill bowl &amp; wedge</h3>
+				<h3>Battle hill bowl and wedge</h3>
 				<p>
 					Your choice of a half sandwich: grilled cheese, turkey, roast beef, or
 					ham with lettuce and tomato and a cup of our homemade soup or
@@ -157,20 +157,20 @@ Top($title);
 				</p>
 			</li>
 		</ul>
-		<h2>Beer brats &amp; kraut</h2>
+		<h2>Beer brats and kraut</h2>
 		<p>
 			German Brats cooked in Fort Ann Amber then grilled and placed on a bed of sautéed
 			beer kraut with apples and onions. Served with our Daily Vegetable.
 		</p>
 		<h2>Little Troopers</h2>
 		<ul>
-			<li class="menu-item">Macaroni &amp; cheese</li>
+			<li class="menu-item">Macaroni and cheese</li>
 			<li class="menu-item">Grilled cheese</li>
 			<li class="menu-item">Trooper burger</li>
 			<li class="menu-item">Chicken strips</li>
 		</ul>
 		<p>
-			All meals served with two sides, a drink, &amp; dessert.
+			All meals served with two sides, a drink, and dessert.
 		</p>
 		<p>
 			<strong>Sides:</strong> Applesauce, French Fries, Mandarin Oranges
