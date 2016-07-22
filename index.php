@@ -12,7 +12,7 @@ Top();
 			</p>
 			<p>
 				Wednesday&ndash;Saturday: 12-8PM<br>
-				Sunday: 12-6PM
+				Sunday: 12-8PM
 			</p>
 		</div>
 		<div class="home-intro">
