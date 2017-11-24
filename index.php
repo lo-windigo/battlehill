@@ -4,6 +4,9 @@ require_once 'lib/template.php';
 
 Top();
 ?>
+		<div class="info">
+			<strong>We are closed for vacation, and will be reopening on November 28th!</strong>
+		</div>
 		<div class="home-details logo">
 			<p>
 				<img src="img/logo.png" alt="The Battle Hill Brewing Company logo"><br>

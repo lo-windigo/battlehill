@@ -233,6 +233,18 @@ textarea {
 	z-index: 100;
 }
 
+.info {
+	background-color: #59243B;
+	background-image: linear-gradient(to top, #59243B, #AD4572);
+	border-radius: .25em;
+	box-shadow: .25em .25em .1em rgba(0,0,0,.25);
+	color: #fefefe;
+	font-size: 1.2em;
+	margin-bottom: 2em;
+	padding: .5em;
+	text-align: center;
+}
+
 .logo {
 	padding-top: 1px;
 	text-align: center;
