@@ -14,7 +14,7 @@ Top(TITLE);
 		</p>
 		<ul class="gallery">
 			<li>
-				<a href="photos/2018-08/"><img src="photos/2018-08/1_t.jpg" alt=
+				<a href="photos/2018-08/"><img src="photos/2018-08/01_t.jpg" alt=
 					"A happy customer eating in front of the specials list"></a><br>
 				<a href="photos/2018-08/">August 2018</a>
 			</li>
