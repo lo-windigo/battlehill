@@ -14,14 +14,14 @@ Top(TITLE);
 		</p>
 		<ul class="gallery">
 			<li>
-				<a href="photos/2015-01/"><img src="photos/2015-01/14_t.jpg" alt=
-					"The owners of Battle Hill standing behind a radial arm saw"></a><br>
-				<a href="photos/2015-01/">January 2015</a>
+				<a href="photos/2018-08/"><img src="photos/2018-08/1_t.jpg" alt=
+					"A happy customer eating in front of the specials list"></a><br>
+				<a href="photos/2018-08/">August 2018</a>
 			</li>
 			<li>
-				<a href="photos/2015-02/"><img src="photos/2015-02/03_t.jpg" alt=
-					"Studs and door frames waiting to be finished"></a><br>
-				<a href="photos/2015-02/">February 2015</a>
+				<a href="photos/opening/"><img src="photos/opening/5_t.jpg" alt=
+					"The bar at Battle Hill"></a><br>
+				<a href="photos/opening/">Opening</a>
 			</li>
 			<li>
 				<a href="photos/2015-09/"><img src="photos/2015-09/08_t.jpg" alt=
@@ -29,9 +29,14 @@ Top(TITLE);
 				<a href="photos/2015-09/">September 2015</a>
 			</li>
 			<li>
-				<a href="photos/opening/"><img src="photos/opening/5_t.jpg" alt=
-					"The bar at Battle Hill"></a><br>
-				<a href="photos/opening/">Opening</a>
+				<a href="photos/2015-02/"><img src="photos/2015-02/03_t.jpg" alt=
+					"Studs and door frames waiting to be finished"></a><br>
+				<a href="photos/2015-02/">February 2015</a>
+			</li>
+			<li>
+				<a href="photos/2015-01/"><img src="photos/2015-01/14_t.jpg" alt=
+					"The owners of Battle Hill standing behind a radial arm saw"></a><br>
+				<a href="photos/2015-01/">January 2015</a>
 			</li>
 		</ul>
 		<aside>
