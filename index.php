@@ -6,12 +6,12 @@ Top();
 
 // Only display the notice while it's needed
 $today = new DateTime();
-$vacation_end_date = new DateTime('2017/11/28');
+$vacation_end_date = new DateTime('2018/11/20');
 
 if($today < $vacation_end_date) {
 ?>
 		<div class="info">
-			<strong>We are closed for vacation, and will be reopening on November 28th!</strong>
+			<strong>We will be closed for vacation between November 12th and 20th!</strong>
 		</div>
 <?php
 }
