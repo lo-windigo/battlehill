@@ -170,13 +170,13 @@ Top($title);
 			<li class="menu-item">Chicken strips</li>
 		</ul>
 		<p>
-			All meals served with two sides, a drink, and dessert.
+			All meals served with one side, a drink, and dessert.
 		</p>
 		<p>
 			<strong>Sides:</strong> Applesauce, French Fries, Mandarin Oranges
 		</p>
 		<p>
-			<strong>Drinks:</strong> Milk, Juice Box
+			<strong>Drinks:</strong> Soft Drink, Iced Tea, Chocolate Milk, Milk, or Lemonade
 		</p>
 		<p>
 			<strong>Dessert:</strong> Ice Cream (vanilla, chocolate, or strawberry) topped with
@@ -185,13 +185,8 @@ Top($title);
 		<h2>Beverages</h2>
 		<ul>
 			<li class="menu-item">
-				<strong>Boylan’s:</strong> Cola, Diet Cola, Orange, Birch Beer
-			</li>
-			<li class="menu-item">
-				<strong>Chef Choice:</strong> Root Beer, Spicy Ginger
-			</li>
-			<li class="menu-item">
-				<strong>Other Choices:</strong> Sprite, Bottled water, Tea, Coffee and Lemonade
+				Pepsi, Diet Pepsi, Ginger Ale, Sierra Mist, Mug Rootbeer, Mountain Dew, Bottled
+				water, Tea, Coffee and Lemonade
 			</li>
 		</ul>
 		<p>
