@@ -23,7 +23,7 @@ if($today < $vacation_end_date) {
 					alt="Find Battle Hill Brewing Company on Facebook"></a>
 			</p>
 			<p>
-				Wednesday-Saturday: 11:30AM &ndash; 8PM
+				Wednesday-Saturday: 11:30AM &ndash; 8PM<br>
 				Sunday: 11:30AM &ndash; 6PM
 			</p>
 		</div>
