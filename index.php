@@ -5,10 +5,11 @@ require_once 'lib/template.php';
 Top();
 
 // Only display the notice while it's needed
+$vacationEndDate = new DateTime('2023/11/29');
 $today = new DateTime();
-$vacation_end_date = new DateTime('2023/11/29');
+$onVacation = $today < $vacationEndDate;
 
-if($today < $vacation_end_date) {
+if($onVacation) {
 ?>
 		<div class="info">
 			<strong>We will be closed for vacation until November 29th!</strong>
@@ -23,6 +24,11 @@ if($today < $vacation_end_date) {
 					alt="Find Battle Hill Brewing Company on Facebook"></a>
 			</p>
 			<p>
+<?php
+if($onVacation) {
+	echo '<em>Currently closed</em><br>';
+}
+?>
 				Wednesday-Saturday: 11:30AM &ndash; 8PM<br>
 				Sunday: 11:30AM &ndash; 6PM
 			</p>
