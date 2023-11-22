@@ -28,9 +28,14 @@ if($onVacation) {
 if($onVacation) {
 	echo '<em>Currently closed</em><br>';
 }
+else
+{
 ?>
 				Wednesday-Saturday: 11:30AM &ndash; 8PM<br>
 				Sunday: 11:30AM &ndash; 6PM
+<?php
+}
+?>
 			</p>
 		</div>
 		<div class="home-intro">
