@@ -6,7 +6,7 @@ Top();
 
 // Only display the notice while it's needed
 $vacationEndDate = new DateTime('2023/11/29');
-$vacationEndText = $vacationEndDate->format('F js');
+$vacationEndText = $vacationEndDate->format('F jS');
 $today = new DateTime();
 $onVacation = $today < $vacationEndDate;
 
