@@ -6,13 +6,14 @@ Top();
 
 // Only display the notice while it's needed
 $vacationEndDate = new DateTime('2023/11/29');
+$vacationEndText = $vacationEndDate->format('F js');
 $today = new DateTime();
 $onVacation = $today < $vacationEndDate;
 
 if($onVacation) {
 ?>
 		<div class="info">
-			<strong>We will be closed for vacation until November 29th!</strong>
+		<strong>We will be closed for vacation until <?php echo $vacationEndText; ?></strong>
 		</div>
 <?php
 }
@@ -26,7 +27,7 @@ if($onVacation) {
 			<p>
 <?php
 if($onVacation) {
-	echo '<em>Currently closed</em><br>';
+	echo '<em>Closed for vacation until ', $vacationEndText, '</em><br>';
 }
 else
 {
